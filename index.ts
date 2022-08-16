@@ -1,3 +1,4 @@
+// define the variables value/identifier
 let firstname: string = "Mason"
 let age: number = 25
 let active: Boolean = true
@@ -17,17 +18,17 @@ enum studentTypes {
 }
 
 
-let mystatus = studentTypes.graduated
+// let mystatus = studentTypes.graduated
 
-switch (Number(mystatus)) {
-    case Number(studentTypes.active):
-        break;
-    case Number(studentTypes.graduated):
-        console.log("Student is graduated")
-        break;
-    default:
-        console.log("😒")
-}
+// switch (Number(mystatus)) {
+//     case Number(studentTypes.active):
+//         break;
+//     case Number(studentTypes.graduated):
+//         console.log("Student is graduated")
+//         break;
+//     default:
+//         console.log("😒")
+// }
 
 // console.log(studentTypes)
 
@@ -54,4 +55,36 @@ function sum(arr: number[]) {
 
 let numbers: number[] = [1, 2, 3, 4, 5, 6]
 
-console.log(sum(numbers))
+// console.log(sum(numbers))
+let complexItem: any = { name: "mason"}
+
+complexItem = { name: "Mason", hasDog: false}
+// complexItem.name = "Todd"
+// complexItem = "It's a String"
+// complexItem = 22
+
+// console.log("complexItem",complexItem)
+
+enum bloodType {
+    aPostive,
+    bPostive,
+    oNegative,
+    oPositive,
+} 
+
+interface human {
+    name: string,
+    age: number,
+    height: number,
+    bloodType?: bloodType,
+} 
+
+
+const me : human = {
+    name: "Bobby",
+    "age": 30,
+    // bloodType: bloodType.oNegative,
+    height: 6 * 12
+
+}
+
