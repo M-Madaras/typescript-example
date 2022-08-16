@@ -50,10 +50,10 @@ complexItem = { name: "Mason", hasDog: false };
 // console.log("complexItem",complexItem)
 var bloodType;
 (function (bloodType) {
-    bloodType[bloodType["aPostive"] = 0] = "aPostive";
-    bloodType[bloodType["bPostive"] = 1] = "bPostive";
-    bloodType[bloodType["oNegative"] = 2] = "oNegative";
-    bloodType[bloodType["oPositive"] = 3] = "oPositive";
+    bloodType[bloodType["aPostive"] = 20] = "aPostive";
+    bloodType[bloodType["bPostive"] = 30] = "bPostive";
+    bloodType[bloodType["oNegative"] = 40] = "oNegative";
+    bloodType[bloodType["oPositive"] = 80] = "oPositive";
 })(bloodType || (bloodType = {}));
 var me = {
     name: "Bobby",
@@ -61,3 +61,4 @@ var me = {
     // bloodType: bloodType.oNegative,
     height: 6 * 12
 };
+console.log({ me: me });

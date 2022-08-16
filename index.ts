@@ -66,10 +66,10 @@ complexItem = { name: "Mason", hasDog: false}
 // console.log("complexItem",complexItem)
 
 enum bloodType {
-    aPostive,
-    bPostive,
-    oNegative,
-    oPositive,
+    aPostive =20,
+    bPostive =30,
+    oNegative =40,
+    oPositive =80,
 } 
 
 interface human {
